@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Client Details</title>
+
+</head>
+
+<body>
+    <div class="con">
+        <div class="text">
+            <h1>Client Details</h1>
+            <p>Enter the Details of all incoming clients</p>
+
+        </div>
+        <form action="#" method="get" autocomplete="on" id="data">
+            <div class="form">
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="clientName">Client Name<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="text" name="clientName" id="clientName"
+                            placeholder="Enter Your Name"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="company">Company<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="text" name="company" id="company"
+                            placeholder="Company Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="title">Title<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="text" name="title" id="title" placeholder="Manager"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="phone">Phone<span>*</span></label></div>
+                    <div class="col-6 col-12-m"><input type="number" name="phone" id="phonenumber"
+                            placeholder="+91-7037400000"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="emailId">Email Id<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="email" name="emailId" id="emailId"
+                            placeholder="email@gmail.com"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="department">Department<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><select name="department" id="department">
+                            <option value="Select " disabled selected>-Choose one--</option>
+                            <option value="sarkari">Sarkari</option>
+                            <option value="basic">basic</option>
+                            <option value="water">water</option>
+                            <option value="tax">tax</option>
+                            <option value="private">private</option>
+                            <option value="teacher">teacher</option>
+                            <option value="nonProfite">non Profite</option>
+
+                        </select></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="contactMethod">Contact Method<span>*</span></label></div>
+                    <div class="col-8 flex col-12-m">
+                        <input type="radio" name="contactMethod" id="email" value="">
+                        <label for="email"> Email</label>
+                        <input type="radio" name="contactMethod" id="phone" value="">
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="companyWebsite">Company Website<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="url" name="companyWebsite" id="companyWebsite"></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="companyLogo">Company Logo<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="file" name="companyLogo" id="companyLogo"> <span>2MB
+                            File*</span></div>
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="address">Company Address<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="text" name="address" id="address">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4 col-12-m">
+                        <select name="State" id="State">
+                            <option value="Select " disabled selected>-State--</option>
+                        </select>
+                    </div>
+                    <div class="col-4 col-12-m">
+                        <select name="country" id="country">
+                            <option value="country" disabled selected>-Country--</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4 col-12-m">
+                        <input type="text" name="cityName" id="cityName" placeholder="City">
+                    </div>
+                    <div class="col-4 col-12-m">
+                        <input type="number" placeholder="Zip Code" id="zipcode">
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="startHour">Start Hour<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="time" name="startHour" id="startHour"></div>
+
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="startDays">Start Days<span>*</span></label></div>
+                    <div class="col-8 col-12-m"><input type="date" name="startDays" id="startDays"></div>
+
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"><label for="additionalInformation">Aadditional Information</label></div>
+                    <div class="col-8 col-12-m"><textarea name="additionalInformation" id="additionalInformation"
+                            cols="30" rows="5"></textarea></div>
+
+                </div>
+                <div class="row">
+                    <div class="col-4 col-12-m"> <input type="reset" value="Clean Data" id="reset"></div>
+                    <div class="col-8 col-12-m"><input type="submit" value="Submit Your Details" id="submit"></div>
+
+                </div>
+
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-12">
+                <div id="dataprint"></div>
+            </div>
+        </div>
+       
+
+    </div>
+    <script>
+        "use strict"
+
+        // function remove() {
+        //     document.querySelector("#clientName").value = "";
+        //     document.querySelector("#company").value = "";
+        //     document.querySelector("#title").value = "";
+        //     document.querySelector("#phonenumber").value = "";
+        //     document.querySelector("#emailId").value = "";
+        //     document.querySelector("#email").value = "";
+        //     document.querySelector("#phone").value = "";
+        //     document.querySelector("#address").value = "";
+        //     document.querySelector("#companyLogo").value = "";
+        //     document.querySelector("#State").value = "";
+        //     document.querySelector("#country").value = "";
+        //     document.querySelector("#cityName").value = "";
+        //     document.querySelector("#zipcode").value = "";
+        //     document.querySelector("#startHour").value = "";
+        //     document.querySelector("#startDays").value = "";
+        //     document.querySelector("#additionalInformation").value = "";
+        // }
+        document.querySelector("#data").addEventListener('submit', function (e) {
+            e.preventDefault()
+            let clientName = document.querySelector("#clientName").value;
+          
+            let company = document.querySelector("#company").value;
+            let title = document.querySelector("#title").value;
+            let phonenumber = document.querySelector("#phonenumber").value;
+            let emailId = document.querySelector("#emailId").value;
+            let email = document.querySelector("#email").value;
+            let phone = document.querySelector("#phone").value;
+            let address = document.querySelector("#address").value;
+            let companyLogo = document.querySelector("#companyLogo").value;
+            let State = document.querySelector("#State").value;
+            let country = document.querySelector("#country").value;
+            let cityName = document.querySelector("#cityName").value;
+            let zipcode = document.querySelector("#zipcode").value;
+            let startHour = document.querySelector("#startHour").value;
+            let startDays = document.querySelector("#startDays").value;
+            let additionalInformation = document.querySelector("#additionalInformation").value;
+
+            document.querySelector('#dataprint').textContent = ` clientName ${clientName} company ${company} title ${title} phonenumber ${phonenumber}  email Id ${emailId} email ${email} phone ${phone} address ${address} companyLogo ${companyLogo} State ${State} country ${country} cityName ${cityName} zipcode ${zipcode} startHour ${startHour} startDays ${startDays} additionalInformation ${additionalInformation}`
+        })
+    </script>
+</body>
+
+</html>
