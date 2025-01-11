@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+.con{
+    max-width: 800px;
+    margin: auto;
+    
+}
+.row{
+    display: flex;
+    margin: 0 1.5rem;
+    flex-flow: row wrap;
+}
+[class^="col"]{
+    padding: 0 1.5rem;
+    flex: 1 0 auto;
+}
+.col-4{
+    max-width: 33.33%;
+    flex-basis: 33.33%;
+}
+.col-8{
+    max-width: 66.66%;
+    flex-basis: 66.66%;
+}
+.col-12{
+    max-width: 100%;
+    flex-basis: 100%;
+}
+
+@media screen and (max-width: 767px) {
+   
+    
+    #reset{
+        width: 100%;
+    }
+    .col-12-m{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    label{
+        
+        padding: 1rem;
+        margin: 1rem;
+
+    }
+input{
+    margin: 1rem;
+}
+form{
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+    
+}
+.form{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.flex{
+    display: flex;
+    justify-content: flex-start;
+}
+.text{
+    padding: 1rem;
+    background-color:#4FA3FC;
+    text-align: center;
+    color: #fff;
+}
+.text p{
+   font-size: 1.5rem;
+   text-transform: capitalize;
+   margin: 15px;
+}
+h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+select{
+    text-transform: capitalize;
+   
+}
+option{
+    padding: 1.5rem;
+    font-size: 20px;
+}
+input,select,textarea{
+    outline: none;
+    border: none;
+    padding: 1.5rem;
+    font-size: 2rem;
+    margin: 20px 10px;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+input:focus {
+    border-bottom: 1px solid black;
+
+  }
+
+span{
+    color: red;
+    font-size: 1.5rem;
+}
+label{
+    font-weight: 800;
+    padding: 1rem;
+    font-size: 2rem;
+    margin: 20px 0px;
+    display: inline-block;
+}
+input[type=radio]{
+    font-size: 0.8rem;
+    width: 25px;
+    height: 50px;
+}
+input[type=file]{
+    outline: 1px dotted black;
+    border: none;
+    
+}input[type=submit]{
+  background: #2E86C1 ;
+  color: #fff;
+    
+}
+input[type=reset]{
+    background: rgb(249, 173, 168) ;
+    color: #141414;
+    border: 1px solid red;
+    width: 80%;
+
+  }
+
+textarea{
+    resize: none;
+    border: 1px solid black;
+}
+
+#dataprint{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.footer-widgets-container strong{
+	text-transform:capitalize;
+    color: #3a5aff
+		
+}
